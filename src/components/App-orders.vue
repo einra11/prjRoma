@@ -1,15 +1,37 @@
 <template>
   <div>
-      <h1>Hello World!</h1>
+      <h1>Choose Items!</h1>
       <div class="wrapper">
         <section class="items">
           <div class="box one">
+            <img src="../assets/imgIcon.png" alt="">
+            <h2>Item 1</h2>
+            <button type="button" name="button">Add</button>
           </div>
           <div class="box two">
+            <img src="../assets/imgIcon.png" alt="">
+            <h2>Item 2</h2>
+            <button type="button" name="button">Add</button>
           </div>
           <div class="box three">
+            <img src="../assets/imgIcon.png" alt="">
+            <h2>Item 3</h2>
+            <button type="button" name="button">Add</button>
           </div>
           <div class="box one">
+            <img src="../assets/imgIcon.png" alt="">
+            <h2>Item 4</h2>
+            <button type="button" name="button">Add</button>
+          </div>
+          <div class="box one">
+            <img src="../assets/imgIcon.png" alt="">
+            <h2>Item 5</h2>
+            <button type="button" name="button">Add</button>
+          </div>
+          <div class="box one">
+            <img src="../assets/imgIcon.png" alt="">
+            <h2>Item 6</h2>
+            <button type="button" name="button">Add</button>
           </div>
         </section>
         <section class="counter">
@@ -38,15 +60,18 @@ export default {
 }
 .items{
   display: flex;
-  background: #E9F1DF;
-  margin-right: 10px;
-  max-width: 500px;
+  background: #222;
   flex-wrap: wrap;
+  min-width: 200px;
+  justify-content: center;
 }
 .box{
-  height:200px;
+  min-height: 200px;
   min-width: 200px;
-  flex-grow: 1;
+  margin: 10px;
+  display: flex;
+  flex-flow: column;
+  color: #222;
 }
 .one{
   background: purple;
@@ -62,5 +87,17 @@ export default {
   width: 300px;
   max-width: 500px;
   background: green;
+}
+/*.counter{
+  position: fixed;
+  padding-top: 40px;
+  margin-left: 700px;
+}*/
+img{
+  width: 100%;
+  max-width: 200px;
+  max-height: 130px;
+}
+.box button{
 }
 </style>
