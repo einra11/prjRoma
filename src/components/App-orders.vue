@@ -31,15 +31,13 @@
                     <h2>Ordered</h2>
                     <div class="contentItems">
                       <ul>
-                        <li><button type="button" name="button">X</button> Level 1 Gucci Armor</li>
-                        <li><button type="button" name="button">X</button> Level 1 Gucci Armor</li>
-                        <li><button type="button" name="button">X</button> Level 1 Gucci Armor</li>
-                        <li><button type="button" name="button">X</button> Level 1 Gucci Armor</li>
-                        <li><button type="button" name="button">X</button> Level 1 Gucci Armor</li>
+                        <li><button type="button" name="button">X</button> Level 1 Gucci Armor : &#x20B1; 220</li>
+                        <li><button type="button" name="button">X</button> Level 1 Gucci Armor : &#x20B1; 220</li>
+                        <li><button type="button" name="button">X</button> Level 1 Gucci Armor : &#x20B1; 220</li>
                       </ul>
                     </div>
                   </section>
-                  <button type="button" name="button">Check-out</button>
+                  <button type="button" name="button" class="chck">Check-out</button>
           </div>
         </section>
       </div>
@@ -122,7 +120,7 @@ li{
 .orderedContainer .contentItems{
   background: #E9F1DF;
   color:#222;
-  width: 200px;
+  width: 290px;
   margin-bottom: 10px;
 }
 .title{
@@ -130,5 +128,20 @@ li{
   margin-bottom: 0;
   padding: 5px;
   color: #fff;
+}
+.chck{
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  color: #ffffff;
+  font-size: 38px;
+  background: #3498db;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  border: 0;
+}
+.chck:hover{
+  background: #3cb0fd;
+  text-decoration: none;
 }
 </style>
