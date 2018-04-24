@@ -7,17 +7,17 @@
           <div class="box one">
             <img src="../assets/imgIcon.png" alt="">
             <h2>Item 1</h2>
-            <button type="button" name="button">Add to Cart</button>
+            <button type="button" name="button" class="chck">Add to Cart</button>
           </div>
           <div class="box two">
             <img src="../assets/imgIcon.png" alt="">
             <h2>Item 2</h2>
-            <button type="button" name="button">Add to Cart</button>
+            <button type="button" name="button" class="chck">Add to Cart</button>
           </div>
           <div class="box two">
             <img src="../assets/imgIcon.png" alt="">
             <h2>Item 2</h2>
-            <button type="button" name="button">Add to Cart</button>
+            <button type="button" name="button" class="chck">Add to Cart</button>
           </div>
         </section>
         <section class="counter">
@@ -45,9 +45,17 @@
 </template>
 
 <script>
+
 export default {
   data () {
     return {
+        avItems:{
+            prdct1:{itemId:"",itemName:"",itemPrice:"", itemImg:""}
+        },
+        counterClc:{
+            totalPrice:null,
+            itemQnty:null
+        }
     }
   }
 }
@@ -62,10 +70,11 @@ export default {
 }
 .items{
   display: flex;
-  background: #F2385A;
+  background: #1F2041;
   flex-wrap: wrap;
   min-width: 200px;
   justify-content: center;
+  margin-right: 10px;
 }
 .box{
   max-height: 250px;
@@ -73,9 +82,9 @@ export default {
   margin: 10px;
   display: flex;
   flex-flow: column;
-  color: #222;
+  color: #fff;
   text-align: center;
-  background: #8FCFDB;
+  background: #9649CB;
   flex-grow: 0;
 }
 .four{
@@ -143,5 +152,8 @@ li{
 .chck:hover{
   background: #3cb0fd;
   text-decoration: none;
+}
+.box .chck{
+    font-size: 18px;
 }
 </style>
