@@ -4,26 +4,24 @@
       <div class="wrapper">
         <!-- Populate this items through ur DB using V-for, add button related to the ordered -->
         <section class="items">
-          <div class="box one">
+          <div class="box" v-for="items in avItems">
             <img src="../assets/imgIcon.png" alt="">
-            <h2>Item 1</h2>
-            <button type="button" name="button" class="chck">Add to Cart</button>
+            <h3>{{items.itemName}}: &#x20B1;{{items.itemPrice}}</h3>
+            <button type="button" name="button" class="chck" @click="addItem(items.itemName, items.itemPrice) , totalPrice+=items.itemPrice">Add to Cart</button>
           </div>
         </section>
         <section class="counter">
           <div class="four">
             <!-- calculate total every time user add pizza-->
                   <section class="total">
-                    <h1>Total : &#x20B1; 999999</h1>
+                    <h1>Total : &#x20B1; {{totalPrice}}</h1>
                   </section>
                   <section class="orderedContainer">
                     <!-- Need to apply V-for, for the list ordered, make add function -->
                     <h2>Ordered</h2>
                     <div class="contentItems">
-                      <ul>
-                        <li><button type="button" name="button">X</button> Level 1 Gucci Armor : &#x20B1; 220</li>
-                        <li><button type="button" name="button">X</button> Level 1 Gucci Armor : &#x20B1; 220</li>
-                        <li><button type="button" name="button">X</button> Level 1 Gucci Armor : &#x20B1; 220</li>
+                      <ul v-for="ordrd in counterClc.itemsOrdered">
+                        <li><button type="button">X</button> {{ordrd.name}} : &#x20B1; {{ordrd.price}}</li>
                       </ul>
                     </div>
                   </section>
@@ -39,13 +37,24 @@
 export default {
   data () {
     return {
-        avItems:{
-            prdct1:{itemId:"",itemName:"",itemPrice:null, itemImg:""}
-        },
+        avItems:[
+            {itemId:"1",itemName:"Gucci Armor",itemPrice:240, itemImg:""},
+            {itemId:"2",itemName:"MansNotH Armor",itemPrice:330, itemImg:""},
+            {itemId:"3",itemName:"Canada Armor",itemPrice:160, itemImg:""},
+            {itemId:"4",itemName:"Germany Armor",itemPrice:160, itemImg:""},
+            {itemId:"5",itemName:"STFU Armor",itemPrice:160, itemImg:""},
+            {itemId:"6",itemName:"MF Armor",itemPrice:160, itemImg:""}
+        ],
         counterClc:{
-            totalPrice:null,
-            itemQnty:null
-        }
+            itemQnty:null,
+            itemsOrdered:[]
+        },
+        totalPrice:0.0,
+    }
+  },
+  methods:{
+    addItem:function(name, price){
+      this.counterClc.itemsOrdered.push({name,price});
     }
   }
 }
