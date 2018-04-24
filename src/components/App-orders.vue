@@ -9,16 +9,6 @@
             <h2>Item 1</h2>
             <button type="button" name="button" class="chck">Add to Cart</button>
           </div>
-          <div class="box two">
-            <img src="../assets/imgIcon.png" alt="">
-            <h2>Item 2</h2>
-            <button type="button" name="button" class="chck">Add to Cart</button>
-          </div>
-          <div class="box two">
-            <img src="../assets/imgIcon.png" alt="">
-            <h2>Item 2</h2>
-            <button type="button" name="button" class="chck">Add to Cart</button>
-          </div>
         </section>
         <section class="counter">
           <div class="four">
@@ -50,7 +40,7 @@ export default {
   data () {
     return {
         avItems:{
-            prdct1:{itemId:"",itemName:"",itemPrice:"", itemImg:""}
+            prdct1:{itemId:"",itemName:"",itemPrice:null, itemImg:""}
         },
         counterClc:{
             totalPrice:null,
@@ -86,6 +76,7 @@ export default {
   text-align: center;
   background: #9649CB;
   flex-grow: 0;
+  border-radius: 5px;
 }
 .four{
   height: 500px;
@@ -102,6 +93,7 @@ img{
   width: 100%;
   max-width: 200px;
   max-height: 140px;
+  border-radius: 5px;
 }
 .box button{
 
@@ -155,5 +147,7 @@ li{
 }
 .box .chck{
     font-size: 18px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius: 5px;
 }
 </style>

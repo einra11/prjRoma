@@ -1,0 +1,18 @@
+from who: counter
+how will be it use: for the business day to day transaction
+
+
+	what is inside the front cashier:
+		.items
+		.prices
+		.day to day inventory
+		.(conditional)customers, info
+		.Official Reciept
+		.number of transactions
+		.date of transaction
+
+	apps-inside
+		.option between, Dine in and Take out
+		.Transaction module, choose the items and encode that is ordered and calculate 			total
+		.production of reciept/Or
+		.preview app
