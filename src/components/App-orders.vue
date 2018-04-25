@@ -20,8 +20,8 @@
                     <!-- Need to apply V-for, for the list ordered, make add function -->
                     <h2>Ordered</h2>
                     <div class="contentItems">
-                      <ul v-for="ordrd in counterClc.itemsOrdered">
-                        <li><button type="button">X</button> {{ordrd.name}} : &#x20B1; {{ordrd.price}}</li>
+                      <ul v-for="(ordrd, key) in counterClc.itemsOrdered">
+                        <li><button type="button" @click="totalPrice-=ordrd.price, deleteArray(key)">X</button> {{ordrd.name}} : &#x20B1; {{ordrd.price}}</li>
                       </ul>
                     </div>
                   </section>
@@ -55,7 +55,11 @@ export default {
   methods:{
     addItem:function(name, price){
       this.counterClc.itemsOrdered.push({name,price});
-    }
+      console.log(this.counterClc.itemsOrdered)
+    },
+    deleteArray: function(index) {
+        this.$delete(this.counterClc.itemsOrdered, index);
+      }
   }
 }
 </script>
