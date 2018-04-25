@@ -32,7 +32,7 @@
         <div class="mapa">
           <iframe
     width="460"
-    height="207"
+    height="316"
     frameborder="0" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyA-un-xrBSAcoscjDVpRwjqqF5GnYNbCnM
     &origin=Pizza Roma, Aparente Street, corner block 7, Morales subdivision, City Heights, General Santos City, South Cotabato
     &destination=Notre Dame of Dadiangas University, Marist Ave, General Santos City, 9500 South Cotabato
@@ -54,7 +54,11 @@ export default {
             {itemId:"3",itemName:"Canada Armor",itemPrice:160, itemImg:""},
             {itemId:"4",itemName:"Germany Armor",itemPrice:160, itemImg:""},
             {itemId:"5",itemName:"STFU Armor",itemPrice:160, itemImg:""},
-            {itemId:"6",itemName:"MF Armor",itemPrice:160, itemImg:""}
+            {itemId:"6",itemName:"MF Armor",itemPrice:160, itemImg:""},
+            {itemId:"7",itemName:"Moon Armor",itemPrice:160, itemImg:""},
+            {itemId:"8",itemName:"Sun Armor",itemPrice:160, itemImg:""},
+            {itemId:"9",itemName:"Cloud Armor",itemPrice:160, itemImg:""}
+
         ],
         counterClc:{
             itemQnty:null,
@@ -93,7 +97,10 @@ export default {
   min-width: 200px;
   padding: 0;
   justify-content: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  padding-bottom: 5px;
+  height: 400px;
+  overflow: auto;
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.5);
 }
 .box{
   max-height: 250px;
@@ -116,6 +123,7 @@ export default {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   border-bottom-left-radius:5px;
   border-bottom-right-radius:5px;
+  height: 320px;
 }
 .counter{
   height: 200px;
@@ -147,19 +155,23 @@ li{
   background:#F5A503;
   color: #fff;
   padding: 5px;
+  height: 185px;
 }
 .orderedContainer .contentItems{
   background: #E9F1DF;
   color:#222;
   width: 290px;
   margin-bottom: 10px;
+  overflow: auto;
+  max-height: 100px;
 }
 .title{
   background: #95B229;
-  margin-top: 0;
+  margin-top:40px;
   margin-bottom: 0;
   padding: 10px;
   color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 .chck{
   -webkit-box-shadow: 0px 1px 3px #666666;
@@ -185,7 +197,7 @@ li{
   margin-top:0;
   margin-bottom: 0px;;
   background: white;
-  max-height: 250px;
+  max-height: 350px;
   justify-content: center;
   border-top: 1px solid;
 }
