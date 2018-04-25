@@ -3,7 +3,7 @@
     <div class="wrapper">
       <app-order></app-order>
     </div>
-    
+
   </div>
 </template>
 
@@ -25,6 +25,10 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+html{
+  background: linear-gradient(45deg, #6cfd9f, #6887ff);
+  height: 140%;
+}
 body{
   margin: 0 auto;
   font-family:'Fira Sans', sans-serif;

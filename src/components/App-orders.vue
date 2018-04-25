@@ -28,6 +28,17 @@
                   <button type="button" name="button" class="chck">Check-out</button>
           </div>
         </section>
+        <!-- insert Here! -->
+        <div class="mapa">
+          <iframe
+    width="460"
+    height="207"
+    frameborder="0" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyA-un-xrBSAcoscjDVpRwjqqF5GnYNbCnM
+    &origin=Pizza Roma, Aparente Street, corner block 7, Morales subdivision, City Heights, General Santos City, South Cotabato
+    &destination=Notre Dame of Dadiangas University, Marist Ave, General Santos City, 9500 South Cotabato
+    &avoid=tolls|highways" allowfullscreen>
+    </iframe>
+        </div>
       </div>
   </div>
 </template>
@@ -73,19 +84,21 @@ export default {
   max-width: 760px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
 }
 .items{
   display: flex;
-  background: #1F2041;
+  background: #ffff;
   flex-wrap: wrap;
   min-width: 200px;
+  padding: 0;
   justify-content: center;
-  margin-right: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 .box{
   max-height: 250px;
   min-width: 200px;
-  margin: 10px;
+  margin: 5px;
   display: flex;
   flex-flow: column;
   color: #fff;
@@ -95,24 +108,25 @@ export default {
   border-radius: 5px;
 }
 .four{
-  height: 500px;
   width: 300px;
   max-width: 500px;
-  background: #E9F1DF;
+  background: #ffff;
   display: flex;
   flex-flow: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
 }
 .counter{
+  height: 200px;
   margin:0;
+  flex-grow: 0;
 }
 img{
   width: 100%;
   max-width: 200px;
   max-height: 140px;
   border-radius: 5px;
-}
-.box button{
-
 }
 ul{
   list-style-type: none;
@@ -141,9 +155,10 @@ li{
   margin-bottom: 10px;
 }
 .title{
-  background: #36B1BF;
+  background: #95B229;
+  margin-top: 0;
   margin-bottom: 0;
-  padding: 5px;
+  padding: 10px;
   color: #fff;
 }
 .chck{
@@ -165,5 +180,19 @@ li{
     font-size: 18px;
     border-bottom-left-radius:5px;
     border-bottom-right-radius: 5px;
+}
+.mapa{
+  margin-top:0;
+  margin-bottom: 0px;;
+  background: white;
+  max-height: 250px;
+  justify-content: center;
+  border-top: 1px solid;
+}
+.topSection{
+  margin-top: 0;
+  margin-bottom:0;
+  height: 50px;
+  padding: 0;
 }
 </style>
