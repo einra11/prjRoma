@@ -59,7 +59,10 @@ export default {
     },
     deleteArray: function(index) {
         this.$delete(this.counterClc.itemsOrdered, index);
-      }
+      },
+    postDate:function(){
+
+    }
   }
 }
 </script>

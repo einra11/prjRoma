@@ -3,6 +3,7 @@
     <div class="wrapper">
       <app-order></app-order>
     </div>
+    
   </div>
 </template>
 
