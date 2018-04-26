@@ -123,7 +123,7 @@ export default {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   border-bottom-left-radius:5px;
   border-bottom-right-radius:5px;
-  height: 320px;
+  height: 405px;
 }
 .counter{
   height: 200px;
@@ -155,7 +155,7 @@ li{
   background:#F5A503;
   color: #fff;
   padding: 5px;
-  height: 185px;
+  height: 265px;
 }
 .orderedContainer .contentItems{
   background: #E9F1DF;

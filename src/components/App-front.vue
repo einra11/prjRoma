@@ -3,6 +3,8 @@
 
       <div class="wrapper">
           <h1 class="title">Transaction Method</h1>
+          <br>
+          <hr width=460>
               <router-link to="/orders2" class="chck dine">Dine In</router-link>
               <router-link to="/orders" class="chck take">Take-Out</router-link>
       </div>
