@@ -1,10 +1,12 @@
 <template>
   <div>
-      <h1 class="title">Transaction Method</h1>
+
       <div class="wrapper">
+          <h1 class="title">Transaction Method</h1>
               <router-link to="/orders2" class="chck dine">Dine In</router-link>
               <router-link to="/orders" class="chck take">Take-Out</router-link>
       </div>
+
   </div>
 </template>
 
@@ -22,8 +24,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+body{
+    text-align: center;
+}
 .wrapper{
-    width: 100%;
+    width: 500px;
     margin: 0 auto;
     background: #fff;
     padding: 10px;
@@ -33,13 +38,19 @@ export default {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    justify-content:center;
+    display: flex;
+    flex-flow:column;
+    margin-top: 40px;
+    padding-top:0;
+    border-radius: 5px;
 }
 .chck{
   -webkit-box-shadow: 0px 1px 3px #666666;
   -moz-box-shadow: 0px 1px 3px #666666;
   box-shadow: 0px 1px 3px #666666;
   color: #ffffff;
-  font-size: 38px;
+  font-size: 30px;
   background: #3498db;
   padding: 10px 10px 10px 10px;
   text-decoration: none;
@@ -51,13 +62,15 @@ export default {
   text-decoration: none;
 }
 .title{
-    width: 100%;
     background: #95B229;
-    margin-top:40px;
     margin-bottom: 0;
     padding: 10px;
     color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    width:100%;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 48px;
+
 }
 .dine{
     background:#ED242D;

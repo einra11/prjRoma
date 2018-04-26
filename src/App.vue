@@ -1,8 +1,6 @@
 <template>
   <div>
     <div class="wrapper">
-        <!-- <app-front></app-front>
-      <app-order></app-order> -->
       <router-view></router-view>
     </div>
   </div>
@@ -39,7 +37,6 @@ body{
   text-rendering: geometricPrecision;
 }
 .wrapper{
-    width: 100%;
     max-width: 960px;
     margin: 0 auto;
 }

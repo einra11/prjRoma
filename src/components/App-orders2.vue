@@ -1,7 +1,7 @@
 <template>
   <div>
       <div class="wrapper">
-          <router-link to="/" class="title">Go back?</router-link>
+          <router-link to="/" class="title back">Go back?</router-link>
           <h1 class="title">Dine-In Choose Items!</h1>
         <!-- Populate this items through ur DB using V-for, add button related to the ordered -->
         <section class="items">
@@ -159,15 +159,21 @@ li{
 }
 .title{
   //background: #95B229;
-  background:#ED242D;
-  margin-top:40px;
-  margin-bottom: 0;
+  background:#F37720;
+
+  margin: 0;
   padding: 20px;
   color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   text-decoration: none;
   text-align: center;
   width:100%;
+}
+.back{
+    width:20%;
+    margin-top:40px;
+    margin-bottom: 10;
+    background: dodgerblue;
 }
 .chck{
   -webkit-box-shadow: 0px 1px 3px #666666;
