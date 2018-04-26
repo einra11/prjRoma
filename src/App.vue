@@ -1,15 +1,17 @@
 <template>
   <div>
     <div class="wrapper">
-      <app-order></app-order>
+        <!-- <app-front></app-front>
+      <app-order></app-order> -->
+      <router-view></router-view>
     </div>
-
   </div>
 </template>
 
 <script>
 
 import appOrders from './components/App-orders.vue';
+import appFront from './components/App-front.vue';
 
 export default {
   data () {
@@ -18,7 +20,8 @@ export default {
     }
   },
   components:{
-    'app-order':appOrders
+    'app-order':appOrders,
+    'app-front':appFront
   }
 }
 </script>
@@ -27,7 +30,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 html{
   background: linear-gradient(45deg, #6cfd9f, #6887ff);
-  height: 140%;
+  height: 200%;
 }
 body{
   margin: 0 auto;

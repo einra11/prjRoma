@@ -2,7 +2,7 @@
   <div>
       <div class="wrapper">
           <router-link to="/" class="title">Go back?</router-link>
-          <h1 class="title">Take-Out Choose Items!</h1>
+          <h1 class="title">Dine-In Choose Items!</h1>
         <!-- Populate this items through ur DB using V-for, add button related to the ordered -->
         <section class="items">
           <div class="box" v-for="items in avItems">
@@ -30,16 +30,6 @@
           </div>
         </section>
         <!-- insert Here! -->
-        <!-- <div class="mapa">
-          <iframe
-    width="460"
-    height="316"
-    frameborder="0" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyA-un-xrBSAcoscjDVpRwjqqF5GnYNbCnM
-    &origin=Pizza Roma, Aparente Street, corner block 7, Morales subdivision, City Heights, General Santos City, South Cotabato
-    &destination=Notre Dame of Dadiangas University, Marist Ave, General Santos City, 9500 South Cotabato
-    &avoid=tolls|highways" allowfullscreen>
-    </iframe>
-        </div> -->
       </div>
   </div>
 </template>
@@ -128,7 +118,7 @@ export default {
   height: 320px;
 }
 .counter{
-  height: 200px;
+  max-height: 400px;
   margin:0;
   flex-grow: 0;
 }

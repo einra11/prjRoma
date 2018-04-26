@@ -1,7 +1,17 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import App from './App.vue'
 import * as VueGoogleMaps from 'vue2-google-maps'
+import Routes from './routes.js'
 
+
+Vue.use(VueRouter);
+
+
+const router = new VueRouter({
+    routes:Routes,
+    mode:'history'
+});
 Vue.use(VueGoogleMaps, {
   load: {
     key: 'AIzaSyB8jh_T5MGpdCdC3zRbCoCpUToRhgTez5U',
@@ -33,5 +43,6 @@ global.jQuery = jQuery
 
 new Vue({
   el: '#app',
-  render: h => h(App)
+  render: h => h(App),
+  router:router
 })
