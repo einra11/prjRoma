@@ -155,15 +155,15 @@ li{
   background:#F5A503;
   color: #fff;
   padding: 5px;
-  height: 265px;
+  height: 285px;
 }
 .orderedContainer .contentItems{
   background: #E9F1DF;
   color:#222;
   width: 290px;
   margin-bottom: 10px;
-  overflow: auto;
-  max-height: 100px;
+  overflow: scroll;
+  max-height: 180px;
 }
 .title{
   //background: #95B229;
