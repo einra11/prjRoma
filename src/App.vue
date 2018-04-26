@@ -30,7 +30,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 html{
   background: linear-gradient(45deg, #6cfd9f, #6887ff);
-  height: 200%;
+  height: 100%;
 }
 body{
   margin: 0 auto;

@@ -2,10 +2,8 @@
   <div>
       <h1 class="title">Transaction Method</h1>
       <div class="wrapper">
-              <!-- <button type="button" class="chck">Dine In</button> -->
-              <router-link to="/orders2" class="chck">Dine In</router-link>
-              <!-- <button type="button" class="chck">Take Out</button> -->
-              <router-link to="/orders" class="chck">Take-Out</router-link>
+              <router-link to="/orders2" class="chck dine">Dine In</router-link>
+              <router-link to="/orders" class="chck take">Take-Out</router-link>
       </div>
   </div>
 </template>
@@ -60,5 +58,11 @@ export default {
     padding: 10px;
     color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.dine{
+    background:#ED242D;
+}
+.take{
+    background:#F37720;
 }
 </style>

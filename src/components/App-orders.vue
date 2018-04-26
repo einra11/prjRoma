@@ -59,7 +59,6 @@ export default {
             {itemId:"7",itemName:"Moon Armor",itemPrice:160, itemImg:""},
             {itemId:"8",itemName:"Sun Armor",itemPrice:160, itemImg:""},
             {itemId:"9",itemName:"Cloud Armor",itemPrice:160, itemImg:""}
-
         ],
         counterClc:{
             itemQnty:null,
@@ -168,7 +167,8 @@ li{
   max-height: 100px;
 }
 .title{
-  background: #95B229;
+  //background: #95B229;
+  background:#F37720;
   margin-top:40px;
   margin-bottom: 0;
   padding: 20px;

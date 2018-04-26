@@ -22,7 +22,7 @@
                     <h2>Ordered</h2>
                     <div class="contentItems">
                       <ul v-for="(ordrd, key) in counterClc.itemsOrdered">
-                        <li><button type="button" @click="totalPrice-=ordrd.price, deleteArray(key)">X</button> {{ordrd.name}} : &#x20B1; {{ordrd.price}}</li>
+                        <li><button type="button" @click="totalPrice-=ordrd.price, deleteArray(key)"class="xBtn">X</button> {{ordrd.name}} : &#x20B1; {{ordrd.price}}</li>
                       </ul>
                     </div>
                   </section>
@@ -158,7 +158,8 @@ li{
   max-height: 100px;
 }
 .title{
-  background: #95B229;
+  //background: #95B229;
+  background:#ED242D;
   margin-top:40px;
   margin-bottom: 0;
   padding: 20px;
@@ -201,5 +202,12 @@ li{
   margin-bottom:0;
   height: 50px;
   padding: 0;
+}
+.xBtn{
+    border: 0;
+    border-radius: 3px;
+}
+.xBtn:hover{
+    background: dodgerblue;
 }
 </style>
